@@ -1,0 +1,50 @@
+{
+  "error_code": 0,
+  "message": "OK",
+  "data": {
+    "favorite_moderators": [
+      {
+        "id": 1095,
+        "name": "Jessa",
+        "avatar": "https://image-1.bituclub.com/images/avatar/64e4685a7ac4ac001d53dc22.jpeg",
+        "online_status": 0,
+        "status": 3,
+        "intro_video": "https://www.youtube.com/watch?v=Yn7of6GIZpg",
+        "original_type": 1,
+        "country": "PH"
+      },
+      {
+        "id": 2522,
+        "name": "CJP",
+        "avatar": "https://image-1.bituclub.com/images/avatar/62da92d56092bd1f8e74514e.jpeg",
+        "online_status": 0,
+        "status": 3,
+        "intro_video": null,
+        "original_type": 1,
+        "country": "PH"
+      }
+    ],
+    "other_moderators": [
+      {
+        "id": 662,
+        "name": "Tihonmot",
+        "avatar": "https://image-1.bituclub.com/images/avatars/60e3c475c5cae8001d63b57a.jpeg",
+        "online_status": 1,
+        "status": 1,
+        "intro_video": "https://www.youtube.com/watch?v=rg18Kf4en2o",
+        "original_type": 2,
+        "country": "VN"
+      },
+      {
+        "id": 4201,
+        "name": "ViVi",
+        "avatar": "https://image-2.bituclub.com/images/avatar/659e13859f1e58001d7adc87.png",
+        "online_status": 1,
+        "status": 1,
+        "intro_video": "https://www.youtube.com/watch?v=AR5ZNqYB69A",
+        "original_type": 1,
+        "country": "VN"
+      }
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "error_code": 0,
+  "message": "OK",
+  "data": [
+    {
+      "name": "Cấp độ 1: Beginner",
+      "short_name": "Beginner",
+      "level": 2001,
+      "objectives": [
+        "Có thể giới thiệu sơ lược về bản thân",
+        "Nắm bắt từ vựng cơ bản về chủ đề quen thuộc",
+        "Có thể phát âm những từ vựng cơ bản"
+      ],
+      "tooltip": "Dành cho học viên mới bắt đầu",
+      "status": 2,
+      "image": "https://image-1.bituclub.com/images/topics/64e8085b8e1200001d138a73.png",
+      "animation": "https://image-2.bituclub.com/images/animation/1.webp",
+      "roadmap_id": "655ece62741b62101711678b",
+      "star": 0
+    },
+    {
+      "name": "Cấp độ 2: Elementary",
+      "short_name": "Elementary",
+      "level": 2201,
+      "objectives": [
+        "Có thể giới thiệu bản thân, miêu tả người và vật",
+        "Thêm từ vựng cơ bản về chủ đề quen thuộc hằng ngày",
+        "Có thể sử dụng từ đơn và câu đơn tương đối tốt"
+      ],
+      "tooltip": "Nói được chủ đề đơn giản bằng câu đơn",
+      "status": 2,
+      "image": "https://image-1.bituclub.com/images/topics/64f695a22a0b1f001fbddb0c.png",
+      "animation": "https://image-2.bituclub.com/images/animation/2.webp",
+      "roadmap_id": "64e5db8a16d4472ebf0a398c",
+      "star": 0
+    },
+    {
+      "name": "Cấp độ 3: Upper Elementary",
+      "short_name": "Upper Elementary",
+      "level": 2301,
+      "objectives": [
+        "Có thể tham gia trò chuyện đơn giản về các chủ đề quen thuộc",
+        "Có thể nói về quá khứ và tương lai một cách đơn giản",
+        "Bước đầu làm quen với việc trả lời bằng câu ghép và câu phức"
+      ],
+      "tooltip": "Nói được chủ đề đơn giản bằng câu ghép",
+      "status": 2,
+      "image": "https://image-1.bituclub.com/images/topics/64e8088a8e1200001d138aa0.png",
+      "animation": "https://image-2.bituclub.com/images/animation/3.webp",
+      "roadmap_id": "64d33f26e11881bae60c22ed",
+      "star": 0
+    },
+    {
+      "name": "Cấp độ 4: Pre Intermediate",
+      "short_name": "Pre Intermediate",
+      "level": 2401,
+      "objectives": [
+        "Có thể bàn luận về các chủ đề trong đời sống bằng vốn từ đa dạng hơn",
+        "Bước đầu làm quen với thế hiện quan điểm cá nhân",
+        "Sử dụng được các từ nối và câu phức đơn giản trong giao tiếp"
+      ],
+      "tooltip": "Nói được chủ đề ít phổ biến bằng câu phức",
+      "status": 2,
+      "image": "https://image-1.bituclub.com/images/topics/64e808e38e1200001d138aaf.png",
+      "animation": "https://image-2.bituclub.com/images/animation/4.webp",
+      "roadmap_id": "65af2ca0a76fa8f9f209464b",
+      "star": 0
+    },
+    {
+      "name": "Cấp độ 5: Lower Intermediate",
+      "short_name": "Lower Intermediate",
+      "level": 2601,
+      "objectives": [],
+      "tooltip": "Có thể bàn luận đơn giản về chủ đề ít phổ biến",
+      "status": 1,
+      "image": "https://image-1.bituclub.com/images/topics/64e808f78e1200001d138abf.png",
+      "animation": "https://image-2.bituclub.com/images/animation/5.webp",
+      "roadmap_id": null,
+      "star": 0
+    },
+    {
+      "name": "Cấp độ 6: Intermediate",
+      "short_name": "Intermediate",
+      "level": 2801,
+      "objectives": [
+        "Có thể tham gia bàn luận về chủ đề ít thông dụng và vấn đề xã hội",
+        "Có thể giao tiếp một cách tương đối tự nhiên với người bản địa",
+        "Có khả năng sử dụng các câu chi tiết, rõ ràng trong nhiều chủ đề khác nhau"
+      ],
+      "tooltip": "Có thể bàn luận khá tốt về các chủ đề khó",
+      "status": 2,
+      "image": "https://image-1.bituclub.com/images/topics/64e8090f8e1200001d138ac0.png",
+      "animation": "https://image-2.bituclub.com/images/animation/6.webp",
+      "roadmap_id": "64d1e63c6c00626c51e0abad",
+      "star": 0
+    },
+    {
+      "name": "Cấp độ 7: Upper Intermediate",
+      "short_name": "Upper Intermediate",
+      "level": 3001,
+      "objectives": [],
+      "tooltip": "Có thể trình bày quan điểm cá nhân khá tốt",
+      "status": 1,
+      "image": "https://image-1.bituclub.com/images/topics/64f696a52a0b1f001fbddc00.png",
+      "animation": "https://image-2.bituclub.com/images/animation/7.webp",
+      "roadmap_id": null,
+      "star": 0
+    },
+    {
+      "name": "Cấp độ 8: Pre Advanced",
+      "short_name": "Pre Advanced",
+      "level": 3201,
+      "objectives": [],
+      "tooltip": "Có thể thảo luận tốt về các chủ đề khó",
+      "status": 1,
+      "image": "https://image-1.bituclub.com/images/topics/64e809418e1200001d138b0b.png",
+      "animation": "https://image-2.bituclub.com/images/animation/8.webp",
+      "roadmap_id": null,
+      "star": 0
+    },
+    {
+      "name": "Cấp độ 9: Advanced",
+      "short_name": "Advanced",
+      "level": 3401,
+      "objectives": [
+        "Có thể giao tiếp một cách tự nhiên và độ lưu loát tiệm cận người bản địa",
+        "Có thể tự tin bàn luận về hầu hết các chủ đề trong cuộc sống và xã hội",
+        "Có thể nghe, hiểu các từ vựng cao cấp, các thành ngữ và tiếng lóng"
+      ],
+      "tooltip": "Có thể phản xạ nhanh và diễn đạt lưu loát",
+      "status": 2,
+      "image": "https://image-1.bituclub.com/images/topics/64e809508e1200001d138b2e.png",
+      "animation": "https://image-2.bituclub.com/images/animation/9.webp",
+      "roadmap_id": "65addb4d193c9486e00415c1",
+      "star": 0
+    },
+    {
+      "name": "Cấp độ 10: Mastery",
+      "short_name": "Mastery",
+      "level": 3601,
+      "objectives": [],
+      "tooltip": "Có thể giao tiếp trôi chảy như người bản ngữ",
+      "status": 1,
+      "image": "https://image-1.bituclub.com/images/topics/64e809668e1200001d138b4f.png",
+      "animation": "https://image-2.bituclub.com/images/animation/10.webp",
+      "roadmap_id": null,
+      "star": 0
+    }
+  ]
+}
