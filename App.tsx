@@ -6,17 +6,25 @@
  */
 
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {StyleSheet} from 'react-native';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+import AppNavigator from './AppNavigator';
+import {AppLoading} from './src/core/components/app-loading';
+import {appLoadingRef} from './src/core/utils/modal';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView
-      style={[{justifyContent: 'center', alignItems: 'center', flex: 1}]}>
-      <Text style={{color: 'black'}}>
-        Đây là bài test của Bitu dành cho ứng viên Middle/Senior React Native
-      </Text>
-    </SafeAreaView>
+    <SafeAreaProvider style={styles.container}>
+      <AppLoading ref={appLoadingRef} />
+      <AppNavigator />
+    </SafeAreaProvider>
   );
 }
 
 export default App;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});

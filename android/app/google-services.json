@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "807911397261",
+    "project_id": "bitutest-7cefe",
+    "storage_bucket": "bitutest-7cefe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807911397261:android:59f76711ff8d0e10834fc4",
+        "android_client_info": {
+          "package_name": "com.bitutest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4qwBASWR9erRgPMReE8GoRXefDdyHcFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
