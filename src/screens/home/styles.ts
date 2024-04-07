@@ -3,9 +3,7 @@ import {AppFontSize, AppHeight, AppWidth} from '../../core/theme/dimensions';
 import {COLORS} from '../../core/theme/colors';
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: COLORS.brown_1,
-  },
+  container: {},
   header: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -58,6 +56,7 @@ const styles = StyleSheet.create({
   flat: {
     flexGrow: 1,
     paddingBottom: AppHeight.HEIGHT_24,
+    backgroundColor: COLORS.brown_1,
   },
 });
 

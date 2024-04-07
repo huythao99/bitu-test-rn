@@ -11,7 +11,6 @@ export default function useHome() {
     try {
       setIsRefreshing(true);
       const response = await loadLevel();
-      console.log('response 123', response.data);
       setLevels(response.data);
     } catch (error: Error | any) {
       showAlerMessage('Erorr', error.message);

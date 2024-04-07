@@ -4,14 +4,27 @@ import {LevelData} from '../../../../core/types/level-response';
 import {Image, Text, TouchableOpacity, View} from 'react-native';
 import styles from './styles';
 import IMAGES from '../../../../core/assets';
+import {CompositeNavigationProp, useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {
+  BottomTabParamList,
+  MainStackParamList,
+} from '../../../../core/navigation/types';
+import {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
 
 type Props = {
   item: LevelData;
   index: number;
 };
 
+type NavigationProp = CompositeNavigationProp<
+  BottomTabNavigationProp<BottomTabParamList, 'HomeScreen'>,
+  NativeStackNavigationProp<MainStackParamList>
+>;
+
 function LevelComponent(props: Props) {
   const {item, index} = props;
+  const navigation = useNavigation<NavigationProp>();
 
   const [aspectRatio, setAspectRatio] = React.useState(1);
 
@@ -19,6 +32,10 @@ function LevelComponent(props: Props) {
     Image.getSize(item.image, (width, height) => {
       setAspectRatio(width / height);
     });
+  };
+
+  const navigateToTeacher = () => {
+    navigation.navigate('TeachersScreen');
   };
 
   React.useEffect(() => {
@@ -73,7 +90,10 @@ function LevelComponent(props: Props) {
         </View>
       )}
       {item.objectives.length !== 0 && (
-        <TouchableOpacity activeOpacity={0.8} style={styles.courseBtn}>
+        <TouchableOpacity
+          activeOpacity={0.8}
+          style={styles.courseBtn}
+          onPress={navigateToTeacher}>
           <Text style={styles.courseText}>Xem khoá học</Text>
         </TouchableOpacity>
       )}

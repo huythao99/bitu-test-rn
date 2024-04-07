@@ -4,6 +4,7 @@ import {MainStackParamList} from './types';
 import {AuthNavigator} from './auth-navigator';
 import {BottomTabNavigator} from './bottom-tab-navigator';
 import auth, {FirebaseAuthTypes} from '@react-native-firebase/auth';
+import TeachersScreen from '../../screens/teachers';
 
 const Stack = createNativeStackNavigator<MainStackParamList>();
 
@@ -12,7 +13,6 @@ export const MainNavigator = () => {
 
   // Handle user state changes
   function onAuthStateChanged(user: FirebaseAuthTypes.User | null) {
-    console.log('user', user !== null);
     setIsSignedIn(user !== null);
   }
 
@@ -35,13 +35,22 @@ export const MainNavigator = () => {
           }}
         />
       ) : (
-        <Stack.Screen
-          name="BottomTab"
-          component={BottomTabNavigator}
-          options={{
-            headerShown: false,
-          }}
-        />
+        <Stack.Group>
+          <Stack.Screen
+            name="BottomTab"
+            component={BottomTabNavigator}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="TeachersScreen"
+            component={TeachersScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
+        </Stack.Group>
       )}
     </Stack.Navigator>
   );

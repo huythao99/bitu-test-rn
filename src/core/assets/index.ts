@@ -19,6 +19,9 @@ const IMAGES = {
   ic_cloud_second: require('./icons/icon-cloud-second/icon-cloud-second.png'),
   ic_question: require('./icons/icon-question/icon-question.png'),
   ic_true: require('./icons/icon-true/icon-true.png'),
+  ic_close: require('./icons/icon-close/icon-close.png'),
+  ic_calendar: require('./icons/icon-calendar/icon-calendar.png'),
+  ic_vietnam_circle: require('./icons/icon-country-circle/icon-country-circle.png'),
 
   image_bitu: require('./images/image-bitu/image-bitu.png'),
   image_banner: require('./images/image-banner/image-banner.png'),

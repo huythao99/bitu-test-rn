@@ -15,4 +15,5 @@ export type BottomTabParamList = {
 export type MainStackParamList = {
   BottomTab: NavigatorScreenParams<BottomTabParamList>;
   AuthNavigator: undefined;
+  TeachersScreen: undefined;
 };
