@@ -22,6 +22,7 @@ const IMAGES = {
   ic_close: require('./icons/icon-close/icon-close.png'),
   ic_calendar: require('./icons/icon-calendar/icon-calendar.png'),
   ic_vietnam_circle: require('./icons/icon-country-circle/icon-country-circle.png'),
+  ic_play: require('./icons/icon-play/icon-play.png'),
 
   image_bitu: require('./images/image-bitu/image-bitu.png'),
   image_banner: require('./images/image-banner/image-banner.png'),

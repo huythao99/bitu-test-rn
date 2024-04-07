@@ -2,7 +2,7 @@ import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {MainStackParamList} from '../../core/navigation/types';
 import {appLoadingRef, showAlerMessage} from '../../core/utils/modal';
-import {ITeacher} from '../../core/types/teacher-response';
+import {IOtherTeacher, ITeacher} from '../../core/types/teacher-response';
 import {useEffect, useState} from 'react';
 import {loadTeachers} from '../../apis/api-teacher';
 
@@ -15,7 +15,7 @@ export default function useTeachers() {
   const navigation = useNavigation<TeacherNavigationProp>();
 
   const [teacherFavorite, setTeacherFavorite] = useState<ITeacher[]>([]);
-  const [teacherOther, setTeacherOther] = useState<ITeacher[]>([]);
+  const [teacherOther, setTeacherOther] = useState<IOtherTeacher[]>([]);
 
   const onBack = () => {
     navigation.goBack();

@@ -5,6 +5,7 @@ import styles from './styles';
 import IMAGES from '../../core/assets';
 import useTeachers from './hooks';
 import HeaderList from './components/header-list';
+import OtherTeacher from './components/other-teacher';
 
 export default function TeachersScreen() {
   const {teacherFavorite, teacherOther, onBack} = useTeachers();
@@ -23,7 +24,7 @@ export default function TeachersScreen() {
         keyExtractor={item => item.id.toString()}
         ListHeaderComponent={<HeaderList teacherFavorites={teacherFavorite} />}
         renderItem={({item}) => {
-          return <View />;
+          return <OtherTeacher item={item} />;
         }}
       />
     </AppSafeView>

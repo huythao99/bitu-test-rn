@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   name: {
-    fontSize: AppFontSize.SIZE_17,
+    fontSize: AppFontSize.SIZE_16,
     fontWeight: '500',
     color: COLORS.gray_2,
   },
@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
   optionContainer: {
     alignItems: 'flex-end',
     flex: 1.5,
+    paddingLeft: AppWidth.WIDTH_8,
   },
   btnStart: {
     flexDirection: 'row',
