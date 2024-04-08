@@ -7,10 +7,15 @@ import {COLORS} from '../../../../core/theme/colors';
 
 type Props = {
   item: ITeacher;
+  navigateSchedule: (teacher: ITeacher) => void;
 };
 
 export default function FavoriteTeacher(props: Props) {
-  const {item} = props;
+  const {item, navigateSchedule} = props;
+
+  const onPressSchedule = () => {
+    navigateSchedule(item);
+  };
 
   return (
     <View style={styles.container}>
@@ -39,7 +44,7 @@ export default function FavoriteTeacher(props: Props) {
             <Text style={styles.textStart}>Start now</Text>
           </TouchableOpacity>
         )}
-        <TouchableOpacity style={styles.btnSchedule}>
+        <TouchableOpacity style={styles.btnSchedule} onPress={onPressSchedule}>
           <Image source={IMAGES.ic_calendar} style={styles.iconCalendar} />
           <Text style={styles.textSchedule}>Schedule</Text>
         </TouchableOpacity>

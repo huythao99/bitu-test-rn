@@ -8,7 +8,8 @@ import HeaderList from './components/header-list';
 import OtherTeacher from './components/other-teacher';
 
 export default function TeachersScreen() {
-  const {teacherFavorite, teacherOther, onBack} = useTeachers();
+  const {teacherFavorite, teacherOther, onBack, navigateSchedule} =
+    useTeachers();
 
   return (
     <AppSafeView>
@@ -22,9 +23,16 @@ export default function TeachersScreen() {
         data={teacherOther}
         contentContainerStyle={styles.flat}
         keyExtractor={item => item.id.toString()}
-        ListHeaderComponent={<HeaderList teacherFavorites={teacherFavorite} />}
+        ListHeaderComponent={
+          <HeaderList
+            navigateSchedule={navigateSchedule}
+            teacherFavorites={teacherFavorite}
+          />
+        }
         renderItem={({item}) => {
-          return <OtherTeacher item={item} />;
+          return (
+            <OtherTeacher navigateSchedule={navigateSchedule} item={item} />
+          );
         }}
       />
     </AppSafeView>

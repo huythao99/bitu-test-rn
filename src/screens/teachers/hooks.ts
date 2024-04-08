@@ -21,6 +21,10 @@ export default function useTeachers() {
     navigation.goBack();
   };
 
+  const navigateSchedule = (teacher: IOtherTeacher | ITeacher) => {
+    navigation.navigate('ScheduleScreen', {teacher});
+  };
+
   const getTeacher = async () => {
     try {
       appLoadingRef.current?.showLoading();
@@ -42,5 +46,6 @@ export default function useTeachers() {
     teacherOther,
     teacherFavorite,
     onBack,
+    navigateSchedule,
   };
 }

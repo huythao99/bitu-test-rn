@@ -5,6 +5,7 @@ import {AuthNavigator} from './auth-navigator';
 import {BottomTabNavigator} from './bottom-tab-navigator';
 import auth, {FirebaseAuthTypes} from '@react-native-firebase/auth';
 import TeachersScreen from '../../screens/teachers';
+import ScheduleScreen from '../../screens/schedule';
 
 const Stack = createNativeStackNavigator<MainStackParamList>();
 
@@ -46,6 +47,13 @@ export const MainNavigator = () => {
           <Stack.Screen
             name="TeachersScreen"
             component={TeachersScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="ScheduleScreen"
+            component={ScheduleScreen}
             options={{
               headerShown: false,
             }}
