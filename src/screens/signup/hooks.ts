@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import auth from '@react-native-firebase/auth';
 import {appLoadingRef, showAlerMessage} from '../../core/utils/modal';
+import {Keyboard} from 'react-native';
 
 export default function useSignup() {
   const [phone, setPhone] = useState('');
@@ -17,6 +18,10 @@ export default function useSignup() {
 
   const onChangePassword = (value: string) => {
     setPassword(value);
+  };
+
+  const onClickOutside = () => {
+    Keyboard.dismiss();
   };
 
   const handleSignup = async () => {
@@ -44,5 +49,6 @@ export default function useSignup() {
     onChangePhone,
     onChangePassword,
     handleSignup,
+    onClickOutside,
   };
 }

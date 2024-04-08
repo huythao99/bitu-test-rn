@@ -107,6 +107,8 @@ export enum AppWidth {
 
   WIDTH_150 = calculateWidth(150),
 
+  WIDTH_168 = calculateWidth(168),
+
   WIDTH_200 = calculateWidth(200),
 
   WIDTH_222 = calculateWidth(222),

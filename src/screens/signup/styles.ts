@@ -123,7 +123,6 @@ const styles = StyleSheet.create({
     fontSize: AppFontSize.SIZE_14,
     color: COLORS.gray_2,
     alignSelf: 'center',
-    marginTop: AppHeight.HEIGHT_168,
   },
   btnLogin: {
     marginVertical: AppHeight.HEIGHT_16,
@@ -141,6 +140,11 @@ const styles = StyleSheet.create({
     fontSize: AppFontSize.SIZE_17,
     color: COLORS.blue_1,
     fontWeight: '500',
+  },
+  bottomContainer: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    marginBottom: AppHeight.HEIGHT_20,
   },
 });
 
