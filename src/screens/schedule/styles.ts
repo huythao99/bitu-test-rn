@@ -82,6 +82,21 @@ const styles = StyleSheet.create({
     fontSize: AppFontSize.SIZE_16,
     color: COLORS.gray_1,
   },
+  btnBooking: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: COLORS.blue_1,
+    marginVertical: AppHeight.HEIGHT_22,
+    marginHorizontal: AppWidth.WIDTH_16,
+    borderRadius: AppWidth.WIDTH_16,
+    paddingVertical: AppHeight.HEIGHT_16,
+  },
+  textBooking: {
+    fontWeight: '500',
+    fontSize: AppFontSize.SIZE_16,
+    color: COLORS.white,
+  },
 });
 
 export default styles;

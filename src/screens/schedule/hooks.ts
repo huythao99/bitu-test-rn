@@ -19,6 +19,7 @@ import {
   getHourAndMinute,
   getMonthAndDay,
 } from '../../core/utils/times';
+import {FlatList} from 'react-native';
 
 type NavigationProps = NativeStackNavigationProp<
   MainStackParamList,
@@ -31,6 +32,8 @@ export default function useSchedule() {
   const navigation = useNavigation<NavigationProps>();
   const route = useRoute<RouteProps>();
   const {teacher} = route.params;
+
+  const scrollRef = useRef<FlatList | null>(null);
 
   const [indicators, setIndicators] = useState<IIndicator[]>([]);
   const [indicatorActive, setIndicatorActive] = useState<
@@ -46,6 +49,13 @@ export default function useSchedule() {
   };
 
   const onChangeIndicator = (indicator: IIndicator) => {
+    const index = indicators.findIndex(item => item.key === indicator.key);
+    if (index > -1) {
+      scrollRef.current?.scrollToIndex({
+        index: index,
+        animated: true,
+      });
+    }
     setIndicatorActive(indicator);
   };
 
@@ -187,6 +197,7 @@ export default function useSchedule() {
     indicators,
     indicatorActive,
     scheduleDisplay,
+    scrollRef,
     onBack,
     onChangeIndicator,
   };

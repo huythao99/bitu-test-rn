@@ -1,8 +1,8 @@
 import * as React from 'react';
 import AppSafeView from '../../core/components/app-safe-view';
 import {
+  FlatList,
   Image,
-  ScrollView,
   SectionList,
   Text,
   TouchableOpacity,
@@ -19,6 +19,7 @@ export default function ScheduleScreen() {
     indicators,
     indicatorActive,
     scheduleDisplay,
+    scrollRef,
     onBack,
     onChangeIndicator,
   } = useSchedule();
@@ -38,11 +39,15 @@ export default function ScheduleScreen() {
         </Text>
       </View>
       <View style={styles.indicatorContainer}>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          {indicators.map(item => {
+        <FlatList
+          data={indicators}
+          horizontal
+          ref={scrollRef}
+          showsHorizontalScrollIndicator={false}
+          keyExtractor={item => item.key}
+          renderItem={({item}) => {
             return (
               <TouchableOpacity
-                key={item.key}
                 onPress={() => onChangeIndicator(item)}
                 style={[
                   styles.indicator,
@@ -68,15 +73,13 @@ export default function ScheduleScreen() {
                 </Text>
               </TouchableOpacity>
             );
-          })}
-        </ScrollView>
+          }}
+        />
       </View>
       <SectionList
         sections={scheduleDisplay}
         keyExtractor={item => item.value}
-        renderSectionHeader={({section: {title}}) => (
-          <Text style={styles.titleDay}>{title}</Text>
-        )}
+        stickySectionHeadersEnabled={false}
         renderItem={({item}) => (
           <View
             style={[
@@ -92,7 +95,13 @@ export default function ScheduleScreen() {
             </Text>
           </View>
         )}
+        renderSectionHeader={({section: {title}}) => (
+          <Text style={styles.titleDay}>{title}</Text>
+        )}
       />
+      <TouchableOpacity style={styles.btnBooking} activeOpacity={0.8}>
+        <Text style={styles.textBooking}>Đặt lịch</Text>
+      </TouchableOpacity>
     </AppSafeView>
   );
 }
